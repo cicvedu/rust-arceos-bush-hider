@@ -1,6 +1,7 @@
 use driver_common::{BaseDriverOps, DeviceType, DevResult};
 #[cfg(feature = "net")]
 use driver_net::NetDriverOps;
+#[cfg(feature = "net")]
 use driver_net::{EthernetAddress, NetBuf, NetBufBox, NetBufPool, NetBufPtr};
 
 pub struct NetFilter<T:BaseDriverOps> {
